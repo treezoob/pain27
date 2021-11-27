@@ -1,0 +1,12 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_pain27
+
+config ZMK_KEYBOARD_NAME
+    default "Pain27"
+
+config BOARD
+	default "pain27"
+	
+endif # BOARD_pain27
