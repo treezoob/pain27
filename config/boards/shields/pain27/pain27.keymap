@@ -39,7 +39,7 @@
         };
         combo_apos {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <25 18>;
             bindings = <&kp APOS>;
             layers = <0>;
         };
