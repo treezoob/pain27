@@ -73,7 +73,7 @@
             bindings = <&kp LGUI>;
             layers = <0>;
         };
-        combo_lgui {
+        combo_return {
             timeout-ms = <30>;
             key-positions = <24 25>;
             bindings = <&kp RET>;
