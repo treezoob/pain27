@@ -73,6 +73,24 @@
             bindings = <&kp LGUI>;
             layers = <0>;
         };
+        combo_lgui {
+            timeout-ms = <30>;
+            key-positions = <24 25>;
+            bindings = <&kp RET>;
+            layers = <0 1 2>;
+        };
+        combo_two_a {
+            timeout-ms = <30>;
+            key-positions = <0 9>;
+            bindings = <&mo 2>;
+            layers = <0>;
+        };
+        combo_two_b {
+            timeout-ms = <30>;
+            key-positions = <10 18>;
+            bindings = <&mo 2>;
+            layers = <0>;
+        };
     };
 
 
@@ -87,14 +105,13 @@
             >;
         };
         n_layer {
-        bindings = <
-            &kp N1  &kp N2  &kp N3 &kp N4  &kp N5  &kp N6  &kp N7 &kp N8 &kp N9 &kp N0
-            &kp F1  &kp F2  &kp F3 &kp F4  &kp F5  &kp F6  &trans &trans &trans
-            &kp F7  &kp F8  &kp F9 &kp F10 &kp F11 &kp F12 &trans
-                                           &trans
-
-        >;
-    };
+            bindings = <
+                &kp N1  &kp N2  &kp N3 &kp N4  &kp N5  &kp N6  &kp N7 &kp N8 &kp N9 &kp N0
+                &kp F1  &kp F2  &kp F3 &kp F4  &kp F5  &kp F6  &trans &trans &trans
+                &kp F7  &kp F8  &kp F9 &kp F10 &kp F11 &kp F12 &trans
+                                               &trans
+            >;
+        };
         s_layer {
             bindings = <
                 &kp DQT   &kp UNDER  &kp LBKT &kp RBKT  &kp CARET &kp EXCL  &kp LT   &kp GT   &kp EQUAL &kp AMPS
