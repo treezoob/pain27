@@ -3,15 +3,106 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 / {
+    hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping_term_ms = <300>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+        combos {
+        compatible = "zmk,combos";
+        combo_del {
+          timeout-ms = <30>;
+          key-positions = <7 8>;
+          bindings = <&kp DEL>;
+          layers = <0 1 2>;
+         };
+        combo_bspc {
+            timeout-ms = <30>;
+            key-positions = <8 9>;
+            bindings = <&kp BKSP>;
+            layers = <0 1 2>;
+        };
+        combo_tab {
+            timeout-ms = <30>;
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+            layers = <0 1 2>;
+        };
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+            layers = <0 1 2>;
+        };
+        combo_apos {
+            timeout-ms = <30>;
+            key-positions = <17 18>;
+            bindings = <&kp APOS>;
+            layers = <0>;
+        };
+        combo_left {
+            timeout-ms = <30>;
+            key-positions = <14 15>;
+            bindings = <&kp LEFT>;
+            layers = <0>;
+        };        
+        combo_down {
+            timeout-ms = <30>;
+            key-positions = <15 16>;
+            bindings = <&kp DOWN>;
+            layers = <0>;
+        };
+        combo_up {
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&kp UP>;
+            layers = <0>;
+        };
+        combo_right {
+            timeout-ms = <30>;
+            key-positions = <17 18>;
+            bindings = <&kp RIGHT>;
+            layers = <0>;
+        };
+        combo_lgui {
+            timeout-ms = <30>;
+            key-positions = <19 20>;
+            bindings = <&kp LGUI>;
+            layers = <0>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
-                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L
-                &kp Z &kp X &kp C &kp V &kp B &kp N &kp M
-                                &kp SPACE
+                &hm LSHFT Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &hm RSHFT P
+                &hm LCTRL A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &hm RCTRL L
+                &hm LGUI Z  &kp X &kp C &kp V &kp B &kp N &hm LGUI M
+                                              &lt 1 SPACE
             >;
         };
+        n_layer {
+        bindings = <
+            &kp N1  &kp N2  &kp N3 &kp N4  &kp N5  &kp N6  &kp N7 &kp N8 &kp N9 &kp N0
+            &kp F1  &kp F2  &kp F3 &kp F4  &kp F5  &kp F6  &trans &trans &trans
+            &kp F7  &kp F8  &kp F9 &kp F10 &kp F11 &kp F12 &trans
+                                           &trans
+
+        >;
+    };
+        s_layer {
+            bindings = <
+                &kp DQT   &kp UNDER  &kp LBKT &kp RBKT  &kp CARET &kp EXCL  &kp LT   &kp GT   &kp EQUAL &kp AMPS
+                &kp MINUS &kp LBRC   &kp RBRC &kp STAR  &kp FSLH  &kp LPAR  &kp RPAR &kp APOS &kp COLON
+                &kp HASH  &kp DOLLAR &kp PIPE &kp GRAVE &kp PLUS  &kp PRCNT &kp AT
+                                                        &trans
+            >;
+        };
+
     };
 };
