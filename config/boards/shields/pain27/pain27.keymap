@@ -113,7 +113,7 @@
         n_layer {
             bindings = <
                 &kp ESC  &kp K_MUTE  &kp K_VOL_DOWN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END &kp BACKSPACE
-                &kp TAB  &kp RGB_TOG  &kp RGB_BRD &kp RGB_BRI  &kp RGB_EFF  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW 
+                &kp TAB  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW 
 		&kp LCTRL &kp LALT &trans &mo 3 &kp RGUI &kp RALT &kp RCTRL &none
             >;
         };
@@ -127,7 +127,7 @@
         x_layer {
             bindings = <
                 &kp F1   &kp F2  &kp F3 &kp F4  &kp F5 &kp F6  &kp F7   &kp F8   &kp F9 &kp F10
-                &kp F11 &kp F12   &kp RGB_SPD &kp RGB_SPI  &kp RGB_HUI  &kp RGB_HUD  &kp RGB_SAI &kp RGB_SAD &kp DELETE
+                &kp F11 &kp F12   &rgb_ug RGB_SPD &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI &rgb_ug RGB_SAD &kp DELETE
                 &kp LCTRL  &kp LALT &trans &trans &kp RGUI  &kp RALT &kp RCTRL &none
             >;
         };
