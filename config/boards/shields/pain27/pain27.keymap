@@ -105,26 +105,30 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &hm LSHFT Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &hm RSHFT P
-                &hm LCTRL A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &hm RCTRL L
-                &hm LGUI Z  &kp X &kp C &kp V &kp B &kp N &hm LGUI M
-                                              &lt 1 SPACE
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L
+                &hm LCTRL Z  &hm LALT X &lt 1 C &lt 2 V &hm RGUI B &hm RALT N &hm RCTRL M &hm LSHFT SPACE
             >;
         };
         n_layer {
             bindings = <
-                &kp N1  &kp N2  &kp N3 &kp N4  &kp N5  &kp N6  &kp N7 &kp N8 &kp N9 &kp N0
-                &kp F1  &kp F2  &kp F3 &kp F4  &kp F5  &kp F6  &trans &trans &rgb_ug RGB_COLOR_HSB(128,100,100)
-                &kp F7  &kp F8  &kp F9 &kp F10 &kp F11 &kp F12 &rgb_ug RGB_TOG
-                                               &trans
+                &kp ESC  &kp K_MUTE  &kp K_VOL_DOWN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END &kp BACKSPACE
+                &kp TAB  &kp RGB_TOG  &kp RGB_BRD &kp RGB_BRI  &kp RGB_EFF  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW 
+		&kp LCTRL &kp LALT &trans &mo 3 &kp RGUI &kp RALT &kp RCTRL &none
             >;
         };
         s_layer {
             bindings = <
-                &kp DQT   &kp UNDER  &kp LBKT &kp RBKT  &kp CARET &kp EXCL  &kp LT   &kp GT   &kp EQUAL &kp AMPS
-                &kp MINUS &kp LBRC   &kp RBRC &kp STAR  &kp FSLH  &kp LPAR  &kp RPAR &kp APOS &kp COLON
-                &kp HASH  &kp DOLLAR &kp PIPE &kp GRAVE &kp PLUS  &kp PRCNT &kp AT
-                                                        &trans
+                &kp N1   &kp N2  &kp N3 &kp N4  &kp N5 &kp N6  &kp N7   &kp N8   &kp N9 &kp N0
+                &kp GRAVE &kp BACKSLASH   &kp MINUS &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON &kp SINGLE_QUOTE &kp ENTER
+                &kp LCTRL  &kp LALT &mo 3 &trans &kp COMMA  &kp PERIOD &kp SLASH &none
+            >;
+        };
+        x_layer {
+            bindings = <
+                &kp F1   &kp F2  &kp F3 &kp F4  &kp F5 &kp F6  &kp F7   &kp F8   &kp F9 &kp F10
+                &kp F11 &kp F12   &kp RGB_SPD &kp RGB_SPI  &kp RGB_HUI  &kp RGB_HUD  &kp RGB_SAI &kp RGB_SAD &kp DELETE
+                &kp LCTRL  &kp LALT &trans &trans &kp RGUI  &kp RALT &kp RCTRL &none
             >;
         };
 
