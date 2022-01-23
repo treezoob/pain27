@@ -24,7 +24,7 @@
           timeout-ms = <30>;
           key-positions = <7 8>;
           bindings = <&kp DEL>;
-          layers = <0 1 2>;
+          layers = <0 1 2 3>;
          };
         combo_bspc {
             timeout-ms = <30>;
@@ -133,3 +133,4 @@
         };
 
     };
+};
