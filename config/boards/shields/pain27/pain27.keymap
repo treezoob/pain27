@@ -19,15 +19,15 @@
    sck-pin = <5>;
    miso-pin = <7>;
 
-   led_strip: ws2812@0 {
+   led_strip: ws2812B@0 {
       compatible = "worldsemi,ws2812-spi";
-      label = "WS2812";
+      label = "WS2812B";
 
       /* SPI */
       reg = <0>; /* ignored, but necessary for SPI bindings */
       spi-max-frequency = <4000000>;
 
-      /* WS2812 */
+      /* WS2812B */
       chain-length = <11>; /* arbitrary; change at will */
       spi-one-frame = <0x70>;
       spi-zero-frame = <0x40>;
