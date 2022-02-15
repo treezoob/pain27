@@ -69,8 +69,14 @@
          };
         combo_tab {
           timeout-ms = <30>;
-          key-positions = <0 1>;
+          key-positions = <10 11>;
           bindings = <&kp TAB>;
+          layers = <0 1 2 3>;
+         };
+	  combo_esc {
+          timeout-ms = <30>;
+          key-positions = <0 1>
+          bindings = <&kp ESC>;
           layers = <0 1 2 3>;
          };
     };
@@ -87,7 +93,7 @@
         };
         n_layer {
             bindings = <
-                &kp ESC  &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_UP &kp UP_ARROW &kp INSERT &kp DELETE
+                &kp ESC  &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_UP &kp UP_ARROW &kp PRINTSCREEN &kp DELETE
                 &kp TAB  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &kp END  &kp PAGE_DOWN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW 
 		&kp LCTRL &kp LALT &trans &mo 3 &kp RGUI &kp RALT &kp RCTRL &kp LSHFT
             >;
