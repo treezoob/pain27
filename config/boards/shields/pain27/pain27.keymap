@@ -58,7 +58,7 @@
         combo_del {
           timeout-ms = <30>;
           key-positions = <8 9>;
-          bindings = <&kp DELETE>;
+          bindings = <&kp BACKSPACE>;
           layers = <0 1 2 3>;
          };
         combo_enter {
@@ -87,7 +87,7 @@
         };
         n_layer {
             bindings = <
-                &kp ESC  &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END &kp BACKSPACE
+                &kp ESC  &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP  &kp K_PLAY_PAUSE  &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END &kp DELETE
                 &kp TAB  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW 
 		&kp LCTRL &kp LALT &trans &mo 3 &kp RGUI &kp RALT &kp RCTRL &kp LSHFT
             >;
